@@ -5,6 +5,15 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `w129`,
+    titleTemplate: "%s · The Real Hero",
+    description: `Gatsby and Tailwindcss starter`,
+    author: `@w129`,
+    url: "https://www.doe.com", // No trailing slash allowed!
+    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@occlumency",
+    lang: "en",
+  },
   plugins: ['gatsby-plugin-postcss'],
 }
