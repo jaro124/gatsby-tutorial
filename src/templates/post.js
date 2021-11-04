@@ -23,13 +23,13 @@ export const query = graphql`
 const Post = props => {
   return (
     <Layout>
-      <div className="mt-8 mx-auto prose">
+      <div className="mt-8 mx-auto prose prose-indigo prose-sm sm:prose lg:prose-lg xl:prose-xl">
         <h1>{props.data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
         <span>
           Posted on {props.data.allMarkdownRemark.edges[0].node.frontmatter.date}{" "}
           <span> / </span> {props.data.allMarkdownRemark.edges[0].node.timeToRead} min read
         </span>
-        <div
+        <div 
           dangerouslySetInnerHTML={{ __html: props.data.allMarkdownRemark.edges[0].node.html }}
         ></div>
       </div>
